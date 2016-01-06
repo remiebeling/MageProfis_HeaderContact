@@ -1,0 +1,35 @@
+<?php /* @var this MageProfis_HeaderContact_Block_Contact */ ?>
+<?php $hours = $this->getTodaysHours(); ?>
+<div class="header-contact <?php if($this->getIsOpen()):?>opened<?php endif; ?>">
+    <?php if ($hours): ?>
+        <div class="phone">
+            <div class="title"><?php echo Mage::getStoreConfig('headercontact/contact/title') ?></div>
+            <span class="phone"><?php echo $this->getPhone(); ?></span>
+        </div>
+        <div class="hours">
+            <div class="title"><?php echo Mage::getStoreConfig('headercontact/hours/title') ?></div>
+            <?php foreach ($hours as $hour): ?>
+                <div class="hour">
+                    <span class="from"><?php echo $hour['time_from']; ?></span>
+                    <span class="until">–</span>
+                    <span class="to"><?php echo $hour['time_to']; ?></span>
+                    <span class="unit"><?php echo Mage::helper('headercontact')->__("o'clock") ?></span>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    <?php else: ?>
+        <div class="phone">
+            <div class="title"><?php echo Mage::getStoreConfig('headercontact/contact/title') ?></div>
+            <span class="not-available">
+                <?php echo Mage::helper('headercontact')->__('By'); ?> <a href="mailto:<?php echo $this->getEmailAddress(); ?>"><?php echo Mage::helper('headercontact')->__('E-Mail'); ?></a>
+                <?php echo Mage::helper('headercontact')->__('or to <a href="%s">Contact Form</a>', Mage::getBaseUrl() . 'contacts'); ?>
+            </span>
+        </div>
+        <div class="hours">
+            <div class="title"><?php echo Mage::getStoreConfig('headercontact/hours/title') ?></div>
+            <div class="hour">
+                <?php echo Mage::helper('headercontact')->__('Currently closed'); ?>
+            </div>
+        </div>
+    <?php endif; ?>
+</div>
