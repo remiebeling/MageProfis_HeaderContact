@@ -1,0 +1,21 @@
+{
+  "name": "mageprofis/headercontact",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "description": "Telefonnummer und Öffnungszeiten über das Backend verwalten",
+  "homepage": "https://github.com/remiebeling/MageProfis_HeaderContact",
+  "require": {
+    "php": ">=5.3"
+  },
+  "suggest": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors": [
+    {
+      "name": "Remi Ebeling",
+      "email": "remi@mage-profis.de",
+      "role": "Author/Maintainer"
+    }
+  ]
+}
+ 
