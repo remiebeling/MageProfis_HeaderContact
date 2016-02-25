@@ -1,1 +1,4 @@
-src/app/code/local/MageProfis/HeaderContact                                     app/code/local/MageProfis/HeaderContactsrc/app/etc/modules/MageProfis_HeaderContact.xml                                app/etc/modules/MageProfis_HeaderContact.xmlsrc/app/design/frontend/base/default/template/page/html/header/contact.phtml    app/design/frontend/base/default/template/page/html/header/contact.phtmlsrc/app/locale/de_DE/MageProfis_HeaderContact.csv                               app/locale/de_DE/MageProfis_HeaderContact.csv
+src/app/code/local/MageProfis/HeaderContact                                     app/code/local/MageProfis/HeaderContact
+src/app/etc/modules/MageProfis_HeaderContact.xml                                app/etc/modules/MageProfis_HeaderContact.xml
+src/app/design/frontend/base/default/template/page/html/header/contact.phtml    app/design/frontend/base/default/template/page/html/header/contact.phtml
+src/app/locale/de_DE/MageProfis_HeaderContact.csv                               app/locale/de_DE/MageProfis_HeaderContact.csv
